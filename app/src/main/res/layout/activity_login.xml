@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.loginfirebase2018_0498.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Login"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:onClick="login"
+        android:text="@string/iniciar_sesi_n"
+        android:textColor="#757575"
+        />
+
+    <TextView
+        android:onClick="forgotPassword"
+        android:id="@+id/txtcontrasenaolvidada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu Contraseña?"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtregistro"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:onClick="registrarse"
+        android:text="¿Estas Registrado?" />
+
+
+</LinearLayout>
